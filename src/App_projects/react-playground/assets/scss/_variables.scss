@@ -1,0 +1,52 @@
+$root_font: "../../../../components/fonts/";
+$font_family: IRANSans;
+$file: IRANSans;
+
+$font: "IRANSansWeb(FaNum)";
+$font_bold: "IRANSansWeb(FaNum)_Bold";
+
+///// COLOR BASE
+$bg_body: #46873f;
+$color_body: #5ba244;
+$main_color: #9db93c;
+$base_color: #9eba3c;
+
+$mycolor: #d3a03e;
+$color2: #f5c360;
+
+$color_blue: #3398d1;
+$color_yellow: #fac400;
+$color_red: #fd5845;
+$color_green: #3eb613;
+
+$gary: #eee;
+$wit: #fff;
+$blak: #333;
+
+$shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+$text_shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+//////// font family
+@font-face {
+  font-family: $font_family;
+  src: url("#{$root_font}#{$file}/#{$font_bold}.eot");
+  src: url("#{$root_font}#{$file}/#{$font_bold}.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$root_font}#{$file}/#{$font_bold}.woff") format("woff"),
+    url("#{$root_font}#{$file}/#{$font_bold}.woff2") format("woff2"),
+    url("#{$root_font}#{$file}/#{$font_bold}.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: $font_family;
+  src: url("#{$root_font}#{$file}/#{$font}.eot");
+  src: url("#{$root_font}#{$file}/#{$font}.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$root_font}#{$file}/#{$font}.woff") format("woff"),
+    url("#{$root_font}#{$file}/#{$font}.woff2") format("woff2"),
+    url("#{$root_font}#{$file}/#{$font}.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

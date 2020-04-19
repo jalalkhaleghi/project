@@ -1,0 +1,101 @@
+@import "./variables";
+
+.react-multi-carousel-list {
+  direction: ltr;
+}
+
+.react-multi-carousel-track {
+  direction: rtl;
+}
+
+.react-tabs__tab-panel {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  max-width: 550px;
+  height: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/meat-new.png");
+  background-position: bottom -80px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  @media (min-width: 576px) {
+    height: 550px;
+    margin-right: 50px;
+  }
+  @media (min-width: 576px) {
+    &:after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      width: 360px;
+      height: 360px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      background-color: #f9f9f9;
+      z-index: -1;
+      @media (min-width: 576px) {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+}
+
+.react-tabs__tab-panel--selected {
+  display: flex !important;
+}
+
+.react-tabs__tab-list {
+  border-bottom: none !important;
+  // margin-bottom: -100px !important;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  height: 100%;
+  @media (min-width: 576px) {
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+
+.react-tabs__tab {
+  border-radius: 50% !important;
+  max-width: 100px;
+  flex: 0 0 100px;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd !important;
+  @media (min-width: 576px) {
+    + .react-tabs__tab {
+      margin-top: 50px !important;
+    }
+    &:first-child {
+      transform: translateX(-80px);
+    }
+    &:last-child {
+      transform: translateX(-70px);
+    }
+  }
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.react-tabs__tab:focus:after {
+  content: none !important;
+}

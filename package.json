@@ -6,9 +6,26 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "icomoon-react": "^2.0.16",
+    "js-cookie": "^2.2.1",
+    "jss": "^10.0.4",
+    "jss-preset-default": "^10.0.4",
+    "jss-rtl": "^0.3.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-id-swiper": "^2.4.0",
+    "react-media": "^1.10.0",
+    "react-multi-carousel": "^2.5.4",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "react-sticky-el": "^1.1.0",
+    "react-tabs": "^3.1.0",
+    "react-toastify": "^5.5.0",
+    "react-tooltip": "^4.0.3",
+    "swiper": "^5.3.1",
+    "uuid": "^7.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^3.0.0"
   }
 }

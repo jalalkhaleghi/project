@@ -1,0 +1,25 @@
+$name_font: "IRANSans";
+$base_font: "../../../components/fonts/IRANSans/IRANSansWeb(FaNum)";
+$bold_font: "../../../components/fonts/IRANSans/IRANSansWeb(FaNum)_Bold";
+
+@font-face {
+  font-family: $name_font;
+  src: url("#{$bold_font}.eot");
+  src: url("#{$bold_font}.eot?#iefix") format("embedded-opentype"),
+    url("#{$bold_font}.woff") format("woff"),
+    url("#{$bold_font}.woff2") format("woff2"),
+    url("#{$bold_font}.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: $name_font;
+  src: url("#{$base_font}.eot");
+  src: url("#{$base_font}.eot?#iefix") format("embedded-opentype"),
+    url("#{$base_font}.woff") format("woff"),
+    url("#{$base_font}.woff2") format("woff2"),
+    url("#{$base_font}.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
